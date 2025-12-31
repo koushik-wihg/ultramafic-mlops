@@ -17,4 +17,7 @@ python-ternary
 setuptools
 wheel
 imbalanced-learn
+lightgbm
+requests
+
 
