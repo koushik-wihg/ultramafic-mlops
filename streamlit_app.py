@@ -8,6 +8,7 @@ from pathlib import Path
 import joblib
 import pandas as pd
 import streamlit as st
+import numpy as np
 import __main__
 
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -21,6 +22,7 @@ RAW_20_COLS = [
     "Ho", "Er", "Yb", "Lu"
 ]
 
+EXPECTED_FEATURES = RAW_20_COLS
 # ------------------------------------------------------------
 # REQUIRED: Custom transformers for joblib compatibility
 # ------------------------------------------------------------
@@ -84,7 +86,7 @@ import joblib
 # ------------------------------------------------------------
 # Model path (direct, no params.yaml, no FastAPI coupling)
 # ------------------------------------------------------------
-MODEL_PATH = Path("models/best_pipeline_XGB_SMOTE_OUT_Fixed.joblib")
+MODEL_PATH = Path("src/best_pipeline_XGB_SMOTE_OUT_Fixed.joblib")
 
 def load_model_artifact(path: Path):
     if not path.exists():
