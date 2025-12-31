@@ -512,11 +512,12 @@ with col_right:
             if not model_loaded:
                 st.error("Model not loaded. Check MODEL_PATH.")
             else:
-                rec = parse_key_value_block(text)
-                if not rec:
-                    st.error("No valid `key=value` lines detected.")
-                else:
-                    df_single = pd.DataFrame([rec])
+                try:
+    df_single = parse_key_value_block(text)
+except Exception as e:
+    st.error(str(e))
+    st.stop()
+
                     try:
                         preds_df = run_model(df_single)
                     except Exception as e:
