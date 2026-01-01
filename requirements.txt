@@ -1,11 +1,11 @@
 streamlit
 pandas
 numpy
-scikit-learn==1.2.2
-imbalanced-learn==0.10.1
-xgboost==1.7.6
 joblib
 openpyxl
 matplotlib
 python-ternary
-lightgbm
+scikit-learn==1.4.2
+imbalanced-learn==0.12.3
+xgboost==1.7.6
+lightgbm==4.1.0
