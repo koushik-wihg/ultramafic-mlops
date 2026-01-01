@@ -1,0 +1,2 @@
+[server]
+requirementsFile = "requirements_streamlit.txt"
