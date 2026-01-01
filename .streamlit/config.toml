@@ -1,2 +1,3 @@
 [server]
+pythonVersion = "3.11"
 requirementsFile = "requirements_streamlit.txt"
