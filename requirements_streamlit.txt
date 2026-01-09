@@ -1,15 +1,10 @@
 streamlit
 pandas
 numpy<2.0
-scikit-learn<1.4
-imbalanced-learn<0.12
-xgboost
 joblib
-matplotlib
-seaborn
-shap
-python-ternary
 openpyxl
+matplotlib
+python-ternary
 requests
 setuptools
 wheel
